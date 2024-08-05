@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+position: relative;
+font-family: "poppins",sans-serif;
+}
+
+
+body {
+width: 100%;
+background:#fffcfc;
+overflow-x: hidden;
+}
+
+
+.main-container{
+width: 100%;
+height: 100vh;
+display: flex;
+justify-content: flex-start;
+flex-direction: column;
+align-items: center;
+overflow-y: scroll;
+}
+
+
+.navbar{
+width: 100%;
+height: fit-content;
+display: flex;
+justify-content: space-between;
+flex-direction: row;
+align-items: center;
+padding: 20px 10%;
+position: relative;
+z-index: 100;
+}
+
+
+.logo{
+text-decoration: none;
+color: #0f0e0e;
+font-size: 30px;
+font-weight: 900;
+text-transform: uppercase;
+
+}
+
+
+.navbar{
+list-style-type: none;
+}
+
+
+.navbar u1 li {
+display: inline;
+margin: 0 18px;
+
+}   
+
+
+.navbar u1 a {
+text-decoration: none;
+color: aqua;
+font-size: 16px;
+font-weight: 600;
+text-transform: uppercase;
+transition: 0.3s;
+}
+
+
+.navbar u1 a:hover,.navbar u1 .active {
+color: #1A2E35;
+}
+.navbar button{
+    width: 10rem;
+    padding: 15px 0;
+    font-size: 16px;
+    background: #1A2E35;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: 0.3s;
+    border: none;
+    outline: none;
+}
+
+
+.main-container img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-timeline: scroll(block nearest) ;
+}
+
+
+#clouds {
+    animation-name: animate-clouds;
+}
+
+@keyframes animate-clouds {
+from{top: 5vh;}
+    to{top: 10vh;}
+}
+
+#sun {
+    animation-name: animate-sun;
+}
+
+@keyframes animate-sun {
+from{top: 15vh;}
+    to{top: -45vh;}
+}
+
+#mountain {
+    animation-name: animate-mountain;
+}
+
+@keyframes animate-mountain {
+from{top: 5vh;}
+    to{top: -5vh;}
+}
+
+#grass {
+    animation-name: animate-grass;
+}
+
+@keyframes animate-grass {
+from{top: -5vh;}
+    to{top: 3vh;}
+}
+
+
+#birds {
+    animation-name: animate-birds;
+}
+
+@keyframes animate-birds {
+from{top: 0; left: 0;}
+    to{top: 5vh;left: -140px;;}
+}
+
+#trees {
+    animation-name: animate-trees;
+}
+
+@keyframes animate-trees {
+from{top: 12; }
+    to{top: 0vh;}
+}
+
+#heading {
+    font-size: 35px;
+    line-height:65px ;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    animation-duration: 0.5s;
+    animation-direction: alternate;
+    animation-timeline: scroll(block nearest) ;
+    color: #0f0e0e;
+    position: absolute;
+    top: 50vh;
+    animation-name: animate-heading;
+
+}
+
+@keyframes animate-heading {
+    from{top: 67.5vh;}
+    to{
+        top: 30vh;
+        }
+}
